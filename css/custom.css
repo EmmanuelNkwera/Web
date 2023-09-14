@@ -23,6 +23,121 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+
+
+/* --- portfolio --- */
+
+#portfolio .center p {
+	margin-top:50px;
+	margin-bottom:50px;
+	font-size:18px;
+}
+
+.portfolio-items, 
+.portfolio-filter {
+  list-style: none outside none;
+  margin: 0 0 40px 0;
+  padding: 0;
+}
+
+.portfolio-filter > li {
+  display: inline-block;
+}
+
+.portfolio-filter > li a {
+  background: none repeat scroll 0 0 rgba(223, 218, 218, 0);
+  font-size: 14px;
+  font-weight: 400;
+  margin-right: 20px;
+  text-transform: uppercase;
+  transition: all 0.9s ease 0s;
+  -moz-transition: all 0.9s ease 0s;
+  -webkit-transition: all 0.9s ease 0s;
+  -o-transition: all 0.9s ease 0s;
+  border: 1px solid rgba(245, 235, 235, 0);
+  outline: none;
+  border-radius: 10px;
+}
+
+.portfolio-filter > li a:hover,
+.portfolio-filter > li a.active{
+  color:#fff;
+  background: #1BBD36;
+  border: 1px solid #1BBD36;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.portfolio-items > li {
+  float: left;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.portfolio-item {
+	margin: 0;
+	padding:0;
+}
+
+.overlay {
+	margin-bottom:20px;
+}
+
+.overlay a:hover {
+	color: #1BBD36;
+}
+
+
+
+.vl {
+
+  border-right:6px solid green;
+  height: 500px;
+
+}
+
+
+
+
+
+.Client {
+  padding-top:90px;
+}
+.Client .title h2 {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 40px;
+  color: #191918;
+  padding: 20px 0px;
+  padding-bottom: 0px;
+}
+.Client .Client_box {
+  background: black;
+  border-radius: 2px;
+  text-align: center;
+  padding: 65px 50px;
+}
+.Client .Client_box h3 {
+  color: #fff;
+  font-size: 30px;
+  line-height: 28px;
+  padding: 25px 0px;
+  padding-top: 32px;
+}
+.Client .Client_box p {
+  color: #fff;
+  font-size: 17px;
+  line-height:28px;
+  font-weight: 400;
+}
+.Client .Client_box i {
+  padding-top: 20px;
+  display: block;
+}
+
+
 .table1 {
   border-collapse: collapse;
   width: 100%;
@@ -35,14 +150,101 @@ th, td {
 }
 tr:hover {background-color: rgb(10, 71, 10);}
 
+
+#fh5co-services-section {
+  position: relative;
+ 
+  background: #1fb57b;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  
+  background: -moz-linear-gradient(45deg, #000000 0%, #000000 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #1fb57b 0%, #258dc8 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #1fb57b 0%, #258dc8 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1fb57b', endColorstr='#258dc8',GradientType=1 );
+  /* IE6-8 fallback on horizontal gradient */
+}
+@media screen and (max-width: 768px) {
+  #fh5co-services-section .services-inner {
+    margin-bottom: 60px;
+  }
+}
+#fh5co-services-section .services-inner h3 {
+  color: white;
+}
+#fh5co-services-section .services-inner p {
+  color: rgba(255, 255, 255, 0.7);
+}
+#fh5co-services-section .services-inner span {
+  display: block;
+  margin-bottom: 45px;
+}
+#fh5co-services-section .services-inner span i {
+  font-size: 40px;
+  color: white;
+  border: 2px solid rgb(95, 93, 93);
+  padding: 23px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+#fh5co-services-section .fh5co-heading h2 {
+  color: #fff;
+}
+#fh5co-services-section .fh5co-heading p {
+  color: rgb(255, 255, 255);
+}
+
+#fh5co-main-services-section .services-inner {
+  position: relative;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-main-services-section .services-inner {
+    margin-bottom: 60px;
+  }
+}
+#fh5co-main-services-section .services-inner .desc {
+  padding-left: 8em;
+}
+#fh5co-main-services-section .services-inner h3 {
+  color: rgba(0, 0, 0, 0.7);
+}
+#fh5co-main-services-section .services-inner span {
+  position: absolute;
+  top: 30px;
+  display: block;
+  margin-bottom: 45px;
+}
+#fh5co-main-services-section .services-inner span i {
+  font-size: 40px;
+  color: #1fb57b;
+  border: 2px solid #1fb57b;
+  padding: 23px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
 .button {
   position: relative;
   background-color: rgb(3, 99, 3);
   border-radius: 20px;
-  font-size: 27px;
+  font-size: 15px;
   color: #fff;
-  padding: 7px;
-  width: 530px;
+  padding: 5px;
+  width: 150px;
   text-align: center;
   -webkit-transition-duration: 0.4s;
  
